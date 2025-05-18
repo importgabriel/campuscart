@@ -5,35 +5,41 @@
 //  Created by wayne on 5/18/25.
 //
 
+
 import SwiftUI
 
+enum Tab {
+    case home, market, messages, profile, settings
+}
+
 struct ContentView: View {
+    @State private var selectedTab: Tab = .home
+
     var body: some View {
-       
-        VStack(spacing: 20){
-                
-                TopBar(title: "CAMP")
-            
-            HStack(spacing:10) {
-                smallActivityCard(activity: "90 degrees", imageName: "sky")
-                smallActivityCard(activity: "Saturday in athens", imageName: "sanford")
-            }.padding()
-            largeActivityCard(activity: "Red & Black UGA",imageName: "rednblack")
-            Divider()
-            
-           
-                Spacer()
-                Divider()
-                BottomBar()
+        VStack(spacing: 0) {
+            TopBar(title: "CAMP")
+
+            // logic for
+            switch selectedTab {
+            case .home:
+                homePage()
+            case .market:
+                marketPlacePage()
+            case .messages:
+                messagesPage()
+            case .profile:
+                profilePage()
+            case .settings:
+                settingsPage()
             }
-        
 
-            
-          
+            Spacer()
+
+            BottomBar(selectedTab: $selectedTab)
         }
-
-        
     }
+}
+
 
 
 struct TopBar: View {
@@ -53,23 +59,20 @@ struct TopBar: View {
             }
 
 
-func homePage() {
-    print("button clicked")
-}
 
 struct BottomBar: View {
-    
-    var body: some View {
-        HStack {
-            BottomBarButton(systemImage: "gear", action: homePage)
-            BottomBarButton(systemImage: "bag.fill", action: homePage)
-            BottomBarButton(systemImage: "house", action: homePage)
-            BottomBarButton(systemImage: "message.fill", action: homePage)
-            BottomBarButton(systemImage: "person.crop.circle.fill", action: homePage)
-        }
+    @Binding var selectedTab: Tab
 
+    var body: some View {
+        Divider()
+        HStack {
+            BottomBarButton(systemImage: "gear", action: { selectedTab = .settings })
+            BottomBarButton(systemImage: "bag.fill", action: { selectedTab = .market })
+            BottomBarButton(systemImage: "house", action: { selectedTab = .home })
+            BottomBarButton(systemImage: "message.fill", action: { selectedTab = .messages })
+            BottomBarButton(systemImage: "person.crop.circle.fill", action: { selectedTab = .profile })
+        }
     }
-    
 }
 
 
@@ -83,15 +86,11 @@ struct BottomBarButton: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width:24,height:24)
-                .padding(10)
+                .padding(15)
         }
     }
 }
 
 
-
-#Preview {
-    ContentView()
-}
 
 
