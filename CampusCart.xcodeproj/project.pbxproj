@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B027A2A62DDC21E600D1820A /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = B027A2A52DDC21E600D1820A /* Auth */; };
+		B027A2A82DDC21E600D1820A /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = B027A2A72DDC21E600D1820A /* Functions */; };
+		B027A2AA2DDC21E600D1820A /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = B027A2A92DDC21E600D1820A /* PostgREST */; };
+		B027A2AC2DDC21E600D1820A /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = B027A2AB2DDC21E600D1820A /* Realtime */; };
+		B027A2AE2DDC21E600D1820A /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = B027A2AD2DDC21E600D1820A /* Storage */; };
+		B027A2B02DDC21E600D1820A /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = B027A2AF2DDC21E600D1820A /* Supabase */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		B027A23D2DDA61BB00D1820A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +38,22 @@
 		B027A2462DDA61BB00D1820A /* CampusCartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampusCartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B027A2C02DDE4D1900D1820A /* Exceptions for "CampusCart" folder in "CampusCart" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B027A22E2DDA61B900D1820A /* CampusCart */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B027A2312DDA61B900D1820A /* CampusCart */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B027A2C02DDE4D1900D1820A /* Exceptions for "CampusCart" folder in "CampusCart" target */,
+			);
 			path = CampusCart;
 			sourceTree = "<group>";
 		};
@@ -77,6 +99,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B027A2AA2DDC21E600D1820A /* PostgREST in Frameworks */,
+				B027A2A82DDC21E600D1820A /* Functions in Frameworks */,
+				B027A2B02DDC21E600D1820A /* Supabase in Frameworks */,
+				B027A2A62DDC21E600D1820A /* Auth in Frameworks */,
+				B027A2AE2DDC21E600D1820A /* Storage in Frameworks */,
+				B027A2AC2DDC21E600D1820A /* Realtime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +175,12 @@
 			);
 			name = CampusCart;
 			packageProductDependencies = (
+				B027A2A52DDC21E600D1820A /* Auth */,
+				B027A2A72DDC21E600D1820A /* Functions */,
+				B027A2A92DDC21E600D1820A /* PostgREST */,
+				B027A2AB2DDC21E600D1820A /* Realtime */,
+				B027A2AD2DDC21E600D1820A /* Storage */,
+				B027A2AF2DDC21E600D1820A /* Supabase */,
 			);
 			productName = CampusCart;
 			productReference = B027A22F2DDA61B900D1820A /* CampusCart.app */;
@@ -230,6 +264,9 @@
 			);
 			mainGroup = B027A2262DDA61B900D1820A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B027A2A42DDC1FB000D1820A /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B027A2302DDA61B900D1820A /* Products */;
 			projectDirPath = "";
@@ -306,6 +343,8 @@
 /* Begin XCBuildConfiguration section */
 		B027A24E2DDA61BB00D1820A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = B027A25D2DDA620E00D1820A /* Resources */;
+			baseConfigurationReferenceRelativePath = supabaseVars.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -369,6 +408,8 @@
 		};
 		B027A24F2DDA61BB00D1820A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = B027A25D2DDA620E00D1820A /* Resources */;
+			baseConfigurationReferenceRelativePath = supabaseVars.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -432,6 +473,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CampusCart/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -459,6 +501,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CampusCart/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -585,6 +628,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B027A2A42DDC1FB000D1820A /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase-community/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B027A2A52DDC21E600D1820A /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B027A2A42DDC1FB000D1820A /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		B027A2A72DDC21E600D1820A /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B027A2A42DDC1FB000D1820A /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		B027A2A92DDC21E600D1820A /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B027A2A42DDC1FB000D1820A /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		B027A2AB2DDC21E600D1820A /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B027A2A42DDC1FB000D1820A /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		B027A2AD2DDC21E600D1820A /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B027A2A42DDC1FB000D1820A /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		B027A2AF2DDC21E600D1820A /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B027A2A42DDC1FB000D1820A /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B027A2272DDA61B900D1820A /* Project object */;
 }

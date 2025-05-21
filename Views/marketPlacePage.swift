@@ -8,12 +8,24 @@
 import SwiftUI
 
 struct marketPlacePage: View {
+    let columns = [
+        GridItem(.flexible(), spacing: 16),
+        GridItem(.flexible(), spacing: 16)
+    ]
+    
     var body: some View {
-        VStack {
-            Text("Marketplace Page")
-                .font(.largeTitle)
-                .padding()
-            Spacer()
+        ScrollView {
+            LazyVGrid(columns: columns, spacing: 20) {
+                ForEach(0..<8, id: \.self) { index in
+                    listingCard(imageName: "sanford")
+                }
+            }
+            .padding()
         }
     }
+}
+
+#Preview {
+    TopBar(title: "MarketPlace")
+    marketPlacePage()
 }

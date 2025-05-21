@@ -94,3 +94,6 @@ struct BottomBarButton: View {
 
 
 
+#Preview {
+    ContentView()
+}
