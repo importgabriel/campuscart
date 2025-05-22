@@ -42,7 +42,6 @@ DerivedData/
 *.dSYM
 
 
-./Resources/supabaseVars
 
 ./CampusCart/Info.plist
 

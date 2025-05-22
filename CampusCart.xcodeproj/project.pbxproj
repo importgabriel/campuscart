@@ -40,9 +40,22 @@
 		B027A2C42DDE8F1600D1820A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B027A2CB2DDEB83400D1820A /* Exceptions for "CampusCart" folder in "CampusCart" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B027A22E2DDA61B900D1820A /* CampusCart */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B027A2312DDA61B900D1820A /* CampusCart */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B027A2CB2DDEB83400D1820A /* Exceptions for "CampusCart" folder in "CampusCart" target */,
+			);
 			path = CampusCart;
 			sourceTree = "<group>";
 		};
@@ -334,8 +347,6 @@
 /* Begin XCBuildConfiguration section */
 		B027A24E2DDA61BB00D1820A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReferenceAnchor = B027A25D2DDA620E00D1820A /* Resources */;
-			baseConfigurationReferenceRelativePath = supabaseVars.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -399,8 +410,6 @@
 		};
 		B027A24F2DDA61BB00D1820A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReferenceAnchor = B027A25D2DDA620E00D1820A /* Resources */;
-			baseConfigurationReferenceRelativePath = supabaseVars.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;

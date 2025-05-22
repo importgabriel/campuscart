@@ -11,7 +11,7 @@ import SwiftUI
 struct CampusCartApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+          LoginPage()
         }
     }
 }
