@@ -61,6 +61,7 @@ final class AuthService: ObservableObject {
         return response
     }
 
+    
 
     enum AuthError: Error {
         case invalidEmailDomain

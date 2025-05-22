@@ -13,6 +13,7 @@
 		B027A2AC2DDC21E600D1820A /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = B027A2AB2DDC21E600D1820A /* Realtime */; };
 		B027A2AE2DDC21E600D1820A /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = B027A2AD2DDC21E600D1820A /* Storage */; };
 		B027A2B02DDC21E600D1820A /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = B027A2AF2DDC21E600D1820A /* Supabase */; };
+		B027A2C52DDE8F1A00D1820A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B027A2C42DDE8F1600D1820A /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,24 +37,12 @@
 		B027A22F2DDA61B900D1820A /* CampusCart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampusCart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B027A23C2DDA61BB00D1820A /* CampusCartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampusCartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B027A2462DDA61BB00D1820A /* CampusCartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampusCartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B027A2C42DDE8F1600D1820A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		B027A2C02DDE4D1900D1820A /* Exceptions for "CampusCart" folder in "CampusCart" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = B027A22E2DDA61B900D1820A /* CampusCart */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B027A2312DDA61B900D1820A /* CampusCart */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				B027A2C02DDE4D1900D1820A /* Exceptions for "CampusCart" folder in "CampusCart" target */,
-			);
 			path = CampusCart;
 			sourceTree = "<group>";
 		};
@@ -128,6 +117,7 @@
 		B027A2262DDA61B900D1820A = {
 			isa = PBXGroup;
 			children = (
+				B027A2C42DDE8F1600D1820A /* .gitignore */,
 				B027A25D2DDA620E00D1820A /* Resources */,
 				B027A25C2DDA620900D1820A /* Services */,
 				B027A25B2DDA620100D1820A /* Models */,
@@ -284,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B027A2C52DDE8F1A00D1820A /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
